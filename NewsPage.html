@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Tin Tức</title>
-    <link rel="stylesheet" type="text/css" href="NewsPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/NewsPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 </head>
 <body>
 <div id="wrapper">
@@ -26,7 +27,8 @@
         </div>
     </div>
     <div id="menu-content">
-        <ul class="list-inline-menu">
+        <div class="wrap-menu">
+            <ul class="list-inline-menu">
             <li class="wrap-logo">
                 <a href="#" title="Trang Chủ">
                     <img src="images/miss-universe-child-page.png" height="47" width="88"/>
@@ -132,6 +134,7 @@
                 </ul>
             </li>
         </ul>
+        </div>
     </div>
     <div id="news-body">
         <div class="news-title">
@@ -140,9 +143,21 @@
         </div>
         <div class="content-news">
             <div class="news-left">
-                <div class="slide-news">
-                    <img src="images/loat-vu-khi-ma-hhen-nie-can-chuan-bi-de-chien-tai-hoa-hau-hoan-vu-hen-ket-1521867780-12-width600height450.jpg"
-                            style="width: 764px">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/2.jpg"></div>
+                        <div class="swiper-slide"><img src="images/SinhnhatHoangThuy10.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Hen-Nie-01.jpg"></div>
+                        <div class="swiper-slide"><img src="images/AF1I8819.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Hen-va-Ekip-Room-To-Read-Unicorp.jpg"></div>
+                        <div class="swiper-slide"><img src="images/t13-1521102891167283190534.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Hen-Nie-11.jpg"></div>
+                        <div class="swiper-slide"><img src="images/DSJ_5725.jpg"></div>
+                        <div class="swiper-slide"><img src="images/loat-vu-khi-ma-hhen-nie-can-chuan-bi-de-chien-tai-hoa-hau-hoan-vu-hen-ket-1521867780-12-width600height450.jpg"></div>
+                        <div class="swiper-slide"><img src="images/Hen-Nie-17.jpg"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <div class="news-info">
                     <div class="row-news-info">
@@ -279,11 +294,41 @@
         </div>
     </div>
     <div id="sponsor-content">
-
+        <div class="sponsors-title">
+            <h5>Nhà Tài Trợ</h5>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/q1.png"></div>
+                <div class="swiper-slide"><img src="images/q2.png"></div>
+                <div class="swiper-slide"><img src="images/q3.png"></div>
+                <div class="swiper-slide"><img src="images/q4.png"></div>
+                <div class="swiper-slide"><img src="images/q5.png"></div>
+                <div class="swiper-slide"><img src="images/q6.png"></div>
+                <div class="swiper-slide"><img src="images/q8.png"></div>
+                <div class="swiper-slide"><img src="images/q9.png"></div>
+            </div>
+        </div>
     </div>
     <div id="footer-content">
 
     </div>
 </div>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 5000,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </body>
 </html>
