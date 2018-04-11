@@ -95,7 +95,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" title="Tin Tức"><span>Tin Tức</span></a>
+                    <a href="NewsPage.html" title="Tin Tức"><span>Tin Tức</span></a>
                 </li>
                 <li class="sub-menu-content">
                     <a href="#" title="Thư Viện"><span>Thư Viện</span></a>
@@ -155,7 +155,6 @@
                                 </div>
                             </a>
                         </div>
-
                         <div class="swiper-slide">
                             <a href="#"><img src="images/SinhnhatHoangThuy10.jpg">
                                 <div class="image-box-text">
@@ -250,7 +249,7 @@
                 <div class="news-info">
                     <div class="row-news-info">
                         <div class="col-news-info">
-                            <a href="#">
+                            <a href="det-giac-mo-co-tich-tu-cuoc-doi-minh.html">
                                 <img src="images/10.jpg" style="width: 230px">
                                 <div class="box-text">
                                     <h5>Hoa hậu H’Hen Niê: Dệt giấc mơ cổ tích từ cuộc đời...</h5>
@@ -390,7 +389,7 @@
         <div class="sponsors-title">
             <h5>Nhà Tài Trợ</h5>
         </div>
-        <div class="swiper-container">
+        <div class="swiper-container" id="sponsor-js">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="images/q1.png"></div>
                 <div class="swiper-slide"><img src="images/q2.png"></div>
@@ -413,6 +412,7 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 
 <!-- Initialize Swiper -->
+
 <script>
     var swiper = new Swiper('.swiper-container', {
         autoplay: {
@@ -425,5 +425,21 @@
         },
     });
 </script>
+
+<script>
+    var swiper = new Swiper('#sponsor-js', {
+        slidesPerView: 6,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 5000,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 </body>
 </html>
